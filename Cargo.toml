@@ -3,6 +3,14 @@ name = "wallpaper_slideshow"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "wallpaper_slideshow"
+path = "src/main.rs"
+
+[[bin]]
+name = "wallpaper-info"
+path = "src/bin/wallpaper_info/main.rs"
+
 [dependencies]
 chrono = "0.4.42"
 libc = "0.2.178"
@@ -11,3 +19,10 @@ rayon = "1.11.0"
 rexif = "0.7.5"
 walkdir = "2.5.0"
 rusqlite = { version = "0.32", features = ["bundled"] }
+
+# For wallpaper-info binary
+image = "0.25.9"
+base64 = "0.22.1"
+flate2 = "1.1.5"
+crossterm = "0.28.1"
+ratatui = "0.29.0"

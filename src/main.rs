@@ -219,7 +219,7 @@ fn setup_environment() {
 fn apply_wallpaper(path: &str) {
     let reload_arg = format!(",{}", path);
     if let Err(e) = Command::new("hyprctl")
-        .args(["hyprpaper", "reload", &reload_arg])
+        .args(["hyprpaper", "wallpaper", &reload_arg])
         .status()
     {
         eprintln!("Failed to run hyprctl: {}", e);

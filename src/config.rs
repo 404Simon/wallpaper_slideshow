@@ -1,6 +1,7 @@
 use std::env;
 
-pub const DEFAULT_WALLPAPER_DIR: &str = "/home/simon/dotfiles/wallpapers/norway";
+pub const DEFAULT_WALLPAPER_DIR: &str =
+    "/home/simon/dotfiles/wallpaper_slideshow/wallpapers/norway";
 pub const DEFAULT_HISTORY_LOG: &str = "/home/simon/.cache/wallpaper_history.log";
 pub const DEFAULT_CACHE_DB: &str = "/home/simon/.cache/wallpaper_exif_cache.db";
 pub const HISTORY_SIZE: usize = 25;
